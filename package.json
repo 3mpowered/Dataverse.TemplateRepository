@@ -25,9 +25,7 @@
     "plugins": [
       "@semantic-release/changelog",
       "@semantic-release/commit-analyzer",
-      "@semantic-release/github",
       "@semantic-release/release-notes-generator",
-      "@droidsolutions-oss/semantic-release-nuget",
       [
         "@droidsolutions-oss/semantic-release-update-file",
         {
@@ -55,6 +53,7 @@
           ]
         }
       ],
+      "@droidsolutions-oss/semantic-release-nuget",
       [
         "@semantic-release/git",
         {
@@ -64,7 +63,8 @@
           ],
           "message": "chore(release): ${nextRelease.version} [skip ci]"
         }
-      ]
+      ],
+      "@semantic-release/github",
     ],
     "repositoryUrl": "TODO",
     "includeSymbols": true,
